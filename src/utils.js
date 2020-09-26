@@ -3,5 +3,5 @@ function connectArr(arr) {
 }
 
 export default {
-    connec
+    connectArr
 }
