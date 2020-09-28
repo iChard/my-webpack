@@ -1,1 +1,3 @@
-console.log(2)
+import { log } from './log'
+log()
+document.querySelector('.hello').classList.add('green')
