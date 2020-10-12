@@ -1,13 +1,16 @@
 {
   "name": "my_webpack",
+  "sideEffects": false,
   "version": "0.1.0",
   "description": "A new package...",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack"
+    "start": "webpack-dev-server  --hot",
+    "build": "webpack",
+    "buildts": "webpack --config webpack.config.ts"
   },
   "dependencies": {
+    "dayjs": "^1.9.1",
     "lodash": "^4.17.20"
   },
   "author": "Meego",
@@ -17,11 +20,16 @@
     "@babel/parser": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
     "@babel/traverse": "^7.11.5",
+    "@types/node": "^14.11.2",
+    "@types/webpack": "^4.41.22",
+    "cache-loader": "^4.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.3.0",
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.5.0",
     "style-loader": "^1.2.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",

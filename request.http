@@ -1,0 +1,52 @@
+GET http://hackr.jp/index.htm HTTP/1.1
+
+###  
+GET http://www.ichard.cn/index.html HTTP/1.1
+
+### 
+GET /index.html HTTP/1.1
+Host: www.ichard.cn
+If-Modified-Since: Thu, 12 Jul 2020 07:30:00 GMT
+
+### 
+GET /api/articles?pageNo=1&pageSize=10 HTTP/1.1
+Host: www.ichard.cn
+
+###
+OPTIONS * HTTP/1.1
+Host: hackr.jp
+
+###
+POST /submit.cgi HTTP/1.1
+Host: www.hackr.jp
+Content-Length: 1560
+
+###
+HEAD /index.htm HTTP/1.1
+Host: hackr.jp
+
+###
+OPTIONS  /index.htm HTTP/1.1
+Host: hackr.jp
+
+###
+TRACE   /index.htm HTTP/1.1
+Host: hackr.jp
+###
+CONNECT proxy.hackr.jp:8080 HTTP/1.1 
+Host: proxy.hackr.jp
+
+###
+curl 'https://erpa.superboss.cc/item/queryTabs?api_name=item_queryTabs' \
+  -H 'authority: erpa.superboss.cc' \
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36' \
+  -H 'trackid: trackid1602321865203_54384' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://erpa.superboss.cc/index.html' \
+  -H 'accept-language: zh-CN,zh;q=0.9' \
+  -H 'cookie: 3AB9D23F7A4B3C9B=B2XDGJTU43C63HUASH5WNWXWPBMRD5UOFAKICHVCLT3B7QBT5UEGEQPFR6EKDEWR54KIYCTGOE7MDWTSHZUIID4KOA; _ati=4443930214905; skin_rgb=74b9e1; _ga=GA1.2.2115889631.1600843104; cookieid=3b5cc5171c488b801f10663efeb53157; wd_sj_nick=%E6%A8%A1%E8%B4%A9%E5%AE%B6; _censeid=720f1c337ac64a40081b24e0d125b379e8926c4f' \
+  --compressed
